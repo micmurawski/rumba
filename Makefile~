@@ -1,0 +1,13 @@
+CXX=g++
+CXXFLAGS=
+LFLAGS=
+OBJS = sokets.o utils.o rumba.o
+all: mainRUMBA
+
+mainRUMBA: $(OBJS)
+	$(CXX) $(CXXFLAGS) $^ -o $@
+
+clean:
+	rm -f *.o mainRUMBA
+
+.PHONY: all clean
