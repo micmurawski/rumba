@@ -6,6 +6,6 @@ broadcast=$(ip addr show |grep -w inet |grep -v 127.0.0.1|awk '{ print $4}')
 
 killall mainRUMBA
 echo `rm *.o`
-echo `rm mainRUMBA`
-echo `rm .rumbaiplist`
-echo `rm .myflielist`
+#echo `rm mainRUMBA`
+#echo `rm .rumbaiplist`
+#echo `rm .myflielist`

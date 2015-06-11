@@ -84,9 +84,9 @@ int do_client(char * addr, int bcast){
       len = recv(mysocket, buffer, MAXRCVLEN, 0);
       buffer[len] = '\0';
       if(len > 0){
-	AllIp2 = LoadList(".rumbaiplist");
+	AllIp2 = LoadList(".iplist");
 	AllIp2.push_back(buffer);//dodawanie ip z buffora do wektora
-	CreateList(AllIp2, ".rumbaiplist");
+	CreateList(AllIp2, ".iplist");
         memset(buffer,0,sizeof buffer);
       }
       else
@@ -98,9 +98,9 @@ int do_client(char * addr, int bcast){
 	break;   
       }
      }
-     AllIp2 = LoadList(".rumbaiplist");
+     AllIp2 = LoadList(".iplist");
      AllIp2 = EraseDuplicates(AllIp2);
-     CreateList(AllIp2,".rumbaiplist");
+     CreateList(AllIp2,".iplist");
      memset(buffer,0,sizeof buffer);
      if(pid==0)
        exit(0);
