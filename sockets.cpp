@@ -19,10 +19,13 @@
 #include <cstring>
 #include <sstream>
 #include <ctype.h>
+#include "rumba.h"
 
 #define MAXRCVLEN 1000
 #define PORTNUM 9000
 using namespace std;
+
+
 
 int do_client(char * addr, int bcast){ 
     char buffer[MAXRCVLEN + 1]; /* +1 so we can add null terminator */
@@ -122,7 +125,7 @@ int serverUDP(string localIp, string localBcastIp)
     //definicje zmiennych
     int BUFSIZE = 2048;
     int PORT = 9000;
-    vector <string> MyFileList; 
+    //vector <string> MyFileList; 
     string myIp=localIp;
     string myBcastIp=localBcastIp;
     struct sockaddr_in myaddr;

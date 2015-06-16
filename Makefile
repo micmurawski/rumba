@@ -1,7 +1,7 @@
 CXX=g++
 CXXFLAGS=
 LFLAGS=-lncurses
-OBJS = sockets.o utils.o rumba.o ncurses-readstring-example.o ncurses-readstring.o ncurses-menu.o ncurses-menu-example.o rumba.o
+OBJS = utils.o rumba.o ncurses-readstring-example.o ncurses-readstring.o ncurses-menu.o ncurses-menu-example.o rumba.o
 all: mainRUMBA
 
 mainRUMBA: $(OBJS)
