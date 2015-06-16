@@ -255,12 +255,10 @@ void clientTCP(string FileNameToDownload,string ServerIp,string FileNameToSave, 
 	//printf("[Client] Connection lost.\n");
 }
 
-/*
-funkcja serverUDP zajmuje się nasłuchiwaniem na porcie 9000;
-odbiera nazwę pliku, który ma wysłać następnie wysyła go do tego użytkownika 
-Uwaga!! funkcja nie obsługuje błędu związanego z wysyłaniem nie istniejącego pliku
-string localIp - adres ip lokalny, string localBcastIp - adres bcast lokalny
-*/
+
+//funkcja serverUDP zajmuje się nasłuchiwaniem na porcie 9000;
+//odbiera nazwę pliku, który ma wysłać następnie wysyła go do tego użytkownika 
+
 int serverUDP(string localIp, string localBcastIp)
 {
     //definicje zmiennych
